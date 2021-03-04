@@ -1,0 +1,7 @@
+R_DEF: Internal format may change without notice
+local
+string app_no_new_update
+string dialogNegativeButton
+string dialogPositiveButton
+string newUpdateAvailable
+xml paths

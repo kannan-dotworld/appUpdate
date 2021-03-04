@@ -1,0 +1,21 @@
+com/artwl/update/Constants.java
+ com.artwl.update.Constants
+com/artwl/update/UpdateNotice.java
+ com.artwl.update.UpdateNotice
+com/artwl/update/entity/UpdateDescription.java
+ com.artwl.update.entity.UpdateDescription
+com/artwl/update/BuildConfig.java
+ com.artwl.update.BuildConfig
+com/artwl/update/UpdateDialog.java
+ com.artwl.update.UpdateDialog
+ com.artwl.update.UpdateDialog$UpdateProgress
+com/artwl/update/model/Init_model.java
+ com.artwl.update.model.Init_model
+com/artwl/update/DownloadService.java
+ com.artwl.update.DownloadService
+com/artwl/update/StorageUtils.java
+ com.artwl.update.StorageUtils
+com/artwl/update/UpdateChecker.java
+ com.artwl.update.UpdateChecker
+ com.artwl.update.UpdateChecker$1
+ com.artwl.update.UpdateChecker$Get_response
