@@ -1,2 +1,1 @@
-include ':android-update-apk'
 include ':app'

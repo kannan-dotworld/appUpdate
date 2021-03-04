@@ -4,7 +4,6 @@
     package="dev.dotworld.appupdate">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
 
     <application
@@ -16,6 +15,16 @@
         android:usesCleartextTraffic="true"
         tools:overrideLibrary="com.artwl.update"
         android:theme="@style/Theme.AppUpdate">
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}"
+            android:exported="false"
+            android:usesCleartextTraffic="true"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/paths"/>
+        </provider>
         <activity android:name=".MainActivity"
             >
             <intent-filter>
@@ -24,7 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="com.artwl.update.DownloadService" android:exported="true" />
+        <service android:name=".service.DownloadService" android:exported="true" />
     </application>
 
 </manifest>

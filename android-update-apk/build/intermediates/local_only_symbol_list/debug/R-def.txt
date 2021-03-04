@@ -1,9 +1,0 @@
-R_DEF: Internal format may change without notice
-local
-string app_no_new_update
-string dialogNegativeButton
-string dialogPositiveButton
-string download_progress
-string download_success
-string newUpdateAvailable
-xml paths
